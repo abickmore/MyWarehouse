@@ -43,14 +43,14 @@ public class TheWarehouseManager {
       //keep asking for
       int choice;
       do{
-        choice = Integer.parseInt(String.valueOf(this.reader.nextLine().charAt(0));
+        choice = Integer.parseInt(String.valueOf(this.reader.nextLine().charAt(0)));
         //If the user types anything different than 1, 2 or 3 it should show an error message
         // indicating the operation entered is not valid.
         if(choice < 1 || choice > this.userOptions.length){
           System.out.println("Sorry! There is an error. Please enter only 1, 2 or 3.");
           //or: System.out.printf(Sorry, please enter a number between 1 and %d.", this.userOptions.length);
         }
-      }while(hoice < 1 || choice > this.userOptions.length); //until a valid value is entered
+      }while(choice < 1 || choice > this.userOptions.length); //until a valid value is entered
       return choice;
     //
     }
